@@ -1,0 +1,21 @@
+// OtherPage.tsx
+
+import React from 'react';
+import Button from './Button'; // Import your Button component
+
+const OtherPage: React.FC = () => {
+  const handleButtonClick = () => {
+    console.log('Button clicked!');
+    // Add your custom logic here
+  };
+
+  return (
+    <div>
+      <h1>Other Page</h1>
+      {/* Use the Button component with props */}
+      <Button onClick={handleButtonClick}>Click me</Button>
+    </div>
+  );
+};
+
+export default OtherPage;
